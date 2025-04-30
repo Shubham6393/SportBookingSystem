@@ -1,12 +1,17 @@
 [phases.setup]
 nixPkgs = [
     "php80",
-    "php80Extensions.curl",
-    "php80Extensions.mbstring",
-    "php80Extensions.xml",
-    "php80Extensions.openssl",
-    "php80Extensions.pdo",
-    "php80Extensions.tokenizer",
-    "php80Extensions.mysql",
+    "php80Packages.curl",
+    "php80Packages.mbstring",
+    "php80Packages.xml",
+    "php80Packages.openssl",
+    "php80Packages.pdo",
+    "php80Packages.tokenizer",
+    "php80Packages.mysqli",
     "composer"
+]
+
+[phases.install]
+cmds = [
+    "composer install --no-dev --optimize-autoloader"
 ] 
