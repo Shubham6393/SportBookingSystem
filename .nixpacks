@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = [
+    "php80",
+    "php80Extensions.curl",
+    "php80Extensions.mbstring",
+    "php80Extensions.xml",
+    "php80Extensions.openssl",
+    "php80Extensions.pdo",
+    "php80Extensions.tokenizer",
+    "php80Extensions.mysql",
+    "composer"
+] 
